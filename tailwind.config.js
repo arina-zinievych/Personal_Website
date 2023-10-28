@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'mainColor': '#0A192F',
         'textMainColor': '#D1D5DB',
+        'accentColor': '#D93271',
       },
     },
   },
