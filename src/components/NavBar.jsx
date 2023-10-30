@@ -16,7 +16,7 @@ const NavBar = () => {
                 <img src={Logo} alt='logo' className='w-[50px]' />
             </div>
 
-            {/* menu */}
+            {/** menu */}
             <ul className='hidden md:flex'>
                 <li>
                     <Link 
@@ -65,7 +65,7 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            {/* burger */}
+            {/** burger */}
             <div 
             onClick={handleClick} 
             className='md:hidden z-10'>
@@ -73,7 +73,7 @@ const NavBar = () => {
                 <FaBars className='cursor-pointer' /> : <FaTimes className='cursor-pointer' />}
             </div>
 
-            {/* mobile menu */}
+            {/** mobile menu */}
             <ul 
             className={!isOpen ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-mainColor flex flex-col justify-center items-center'}
             >
@@ -129,7 +129,7 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            {/* social icons */}
+            {/** social icons */}
             <div className='hidden lg:flex flex-col fixed top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>

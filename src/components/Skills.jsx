@@ -8,18 +8,30 @@ import JavascriptImg from '../assets/javascript.png';
 import TypescriptImg from '../assets/typescript.png';
 import BootstrapImg from '../assets/bootstrap.png';
 import TailwindImg from '../assets/tailwindcss.png';
+import { motion } from 'framer-motion';
+import {textAnimation } from '../animation/animation';
 
 const Skills = () => {
     return (
-        <div name='skills' className='w-full h-screen bg-mainColor text-textMainColor'>
+        <motion.section 
+        initial='hidden'
+        whileInView='visible'
+        name='skills' 
+        className='w-full h-screen bg-mainColor text-textMainColor'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-                <div>
+                <motion.div
+                custom={1}
+                variants={textAnimation}
+                >
                     <p className='text-4xl font-bold inline border-b-4 border-accentColor'>Skills</p>
-                    <p className='py-4'>// These are the technologies I`ve worked with</p>
-                </div>
+                    <p className='py-4'>&frasl; &frasl; These are the technologies I`ve worked with</p>
+                </motion.div>
 
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+                <motion.div 
+                custom={2}
+                variants={textAnimation}
+                className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
                     <div className='shadow-md shadow-blue-900 hover:scale-110 duration-500'>
                         <img className='w-20 mx-auto' src={HtmlImg} alt='html icon' />
                         <p className='my-4'>HTML</p>
@@ -56,9 +68,9 @@ const Skills = () => {
                         <img className='w-20 mx-auto' src={GitImg} alt='git icon' />
                         <p className='my-4'>Git</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.section>
     );
 }
 

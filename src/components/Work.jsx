@@ -1,20 +1,31 @@
 import React from 'react';
 import websiteImg from '../assets/website.jpeg';
+import { motion } from 'framer-motion';
+import {textAnimation } from '../animation/animation';
 
 const Work = () => {
     return (
-        <div name='work' className='w-full md:h-screen bg-mainColor text-textMainColor'>
+        <motion.section
+        initial='hidden'
+        whileInView='visible' 
+        name='work' 
+        className='w-full md:h-screen bg-mainColor text-textMainColor'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-                <div className='pb-8'>
+                <motion.div
+                custom={1}
+                variants={textAnimation} 
+                className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-accentColor'>Work</p>
-                    <p className='py-6'>// Check out some of my recent work</p>
-                </div>
+                    <p className='py-6'>&frasl; &frasl; Check out some of my recent work</p>
+                </motion.div>
                 
-                {/* Container */}
-                <div 
+                {/** Container */}
+                <motion.div 
+                custom={2}
+                variants={textAnimation}
                 className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'
                 >
-                    {/* Grid Item */}
+                    {/** Grid Item */}
                     <div 
                     style={{backgroundImage: `url(${websiteImg})`}}
                     className='shadow-lg shadow-blue-900 group container rounded-md flex justify-center items-center mx-auto content-div'>
@@ -110,9 +121,9 @@ const Work = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.section>
     );
 }
 
