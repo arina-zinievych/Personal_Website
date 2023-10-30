@@ -23,11 +23,4 @@ export const data = [
         demo: "",
         code: "",
     },
-    {
-        id: 4,
-        name: "React JS Application",
-        image: template,
-        demo: "",
-        code: "",
-    },
 ];

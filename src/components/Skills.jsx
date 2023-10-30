@@ -17,7 +17,7 @@ const Skills = () => {
         initial='hidden'
         whileInView='visible'
         name='skills' 
-        className='w-full h-screen bg-mainColor text-textMainColor'>
+        className='w-full py-8 h-screen bg-mainColor text-textMainColor'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <motion.div
