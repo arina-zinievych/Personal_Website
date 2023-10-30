@@ -17,7 +17,7 @@ const Skills = () => {
         initial='hidden'
         whileInView='visible'
         name='skills' 
-        className='w-full h-screen text-textMainColor my-16'>
+        className='w-full text-textMainColor my-16 md:my-24'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <motion.div
