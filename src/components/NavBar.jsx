@@ -18,7 +18,7 @@ const NavBar = () => {
 
             {/** menu */}
             <ul className='hidden md:flex'>
-                <li>
+                <li className='hover:text-accentColor'>
                     <Link 
                     to="home" 
                     smooth={true} 
@@ -27,7 +27,7 @@ const NavBar = () => {
                         Home
                     </Link>
                 </li>
-                <li>
+                <li className='hover:text-accentColor'>
                     <Link 
                     to="about" 
                     smooth={true} 
@@ -36,7 +36,7 @@ const NavBar = () => {
                         About
                     </Link>
                 </li>
-                <li>
+                <li className='hover:text-accentColor'>
                     <Link 
                     to="skills" 
                     smooth={true} 
@@ -45,7 +45,7 @@ const NavBar = () => {
                         Skills
                     </Link>
                 </li>
-                <li>
+                <li className='hover:text-accentColor'>
                     <Link 
                     to="work" 
                     smooth={true} 
@@ -54,7 +54,7 @@ const NavBar = () => {
                         Work
                     </Link>
                 </li>
-                <li>
+                <li className='hover:text-accentColor'>
                     <Link 
                     to="contact" 
                     smooth={true} 
@@ -77,7 +77,7 @@ const NavBar = () => {
             <ul 
             className={!isOpen ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-mainColor flex flex-col justify-center items-center'}
             >
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:text-accentColor'>
                     <Link 
                     onClick={handleClick}
                     to="home" 
@@ -87,7 +87,7 @@ const NavBar = () => {
                         Home
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:text-accentColor'>
                     <Link 
                     onClick={handleClick}
                     to="about" 
@@ -97,7 +97,7 @@ const NavBar = () => {
                         About
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:text-accentColor'>
                     <Link 
                     onClick={handleClick}
                     to="skills" 
@@ -107,7 +107,7 @@ const NavBar = () => {
                         Skills
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:text-accentColor'>
                     <Link
                     onClick={handleClick} 
                     to="work" 
@@ -117,7 +117,7 @@ const NavBar = () => {
                         Work
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:text-accentColor'>
                     <Link 
                     onClick={handleClick}
                     to="contact" 
