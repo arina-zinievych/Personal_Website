@@ -11,7 +11,7 @@ const Work = () => {
         initial='hidden'
         whileInView='visible' 
         name='work' 
-        className='w-full pt-24 pb-16 md:h-screen bg-mainColor text-textMainColor'>
+        className='w-full h-screen text-textMainColor my-16'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <motion.div
                 custom={1}

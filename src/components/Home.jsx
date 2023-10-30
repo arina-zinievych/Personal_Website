@@ -10,7 +10,7 @@ const Home = () => {
         initial='hidden'
         whileInView='visible'
         name='home' 
-        className='w-full h-screen bg-mainColor'>
+        className='w-full h-screen'>
 
             {/** Container */ }
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>

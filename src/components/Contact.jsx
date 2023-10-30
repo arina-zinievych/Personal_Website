@@ -8,7 +8,7 @@ const Contact = () => {
         initial='hidden'
         whileInView='visible'
         name='contact' 
-        className='w-full py-8 h-screen bg-mainColor flex justify-center items-center p-4'>
+        className='w-full h-screen flex justify-center items-center p-4 mt-16'>
             <form 
             method='POST'
             action='https://getform.io/f/3e300990-7bcf-49e4-9361-9ba934bc2735'

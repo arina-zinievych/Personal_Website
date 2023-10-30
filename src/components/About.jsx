@@ -8,7 +8,7 @@ const About = () => {
         initial='hidden'
         whileInView='visible'
         name='about' 
-        className='w-full h-screen bg-mainColor text-textMainColor'>
+        className='w-full h-screen text-textMainColor'>
             <motion.div
             custom={1}
             variants={textAnimation} 
