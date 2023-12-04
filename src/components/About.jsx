@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {textAnimation } from '../animation/animation';
+import Avatar from '../assets/avatar.png';
 
 const About = () => {
     return (
@@ -8,7 +9,7 @@ const About = () => {
         initial='hidden'
         whileInView='visible'
         name='about' 
-        className='w-full text-textMainColor my-16 md:my-32'>
+        className='w-full text-textMainColor py-32 md:py-60'>
             <motion.div
             custom={1}
             variants={textAnimation} 
@@ -21,10 +22,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                    <div className='sm:text-right text-4xl font-bold'>
-                        <p className=''>Hi. I`m Arina, nice to meet you. Please take a look around.</p>
+                    <div className='sm:text-right text-3xl font-bold'>
+                        <div className='w-[200px] h-[200px] mx-auto'>
+                            <img className='w-full h-full object-cover' src={Avatar} alt='avatar' />
+                        </div>
+                        <p>Hi. I`m Arina, nice to meet you. Please take a look around.</p>
                     </div>
-                    <div>
+                    <div className='place-self-center'>
                         <p>
                         I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. In my free time, I avidly explore new web development technologies. I'm also a nature enthusiast, finding inspiration through hiking and trekking. In essence, I'm a frontend developer on a continuous learning journey, driven by a love for both web development and outdoor adventures.
                         </p>

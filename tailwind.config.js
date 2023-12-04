@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'mainColor': '#0A192F',
-        'textMainColor': '#D1D5DB',
-        'accentColor': '#D93271',
+        'mainColor': '#F8F9F8',
+        'textMainColor': '#1B2932',
+        'accentColor': '#43BEB0',
       },
     },
   },

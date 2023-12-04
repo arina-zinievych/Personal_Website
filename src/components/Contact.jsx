@@ -8,7 +8,7 @@ const Contact = () => {
         initial='hidden'
         whileInView='visible'
         name='contact' 
-        className='w-full flex justify-center items-center p-4 mt-16 md:mt-24'>
+        className='w-full flex justify-center items-center p-4 py-32 md:py-60'>
             <form 
             method='POST'
             action='https://getform.io/f/3e300990-7bcf-49e4-9361-9ba934bc2735'
@@ -26,7 +26,7 @@ const Contact = () => {
                 type='text' 
                 placeholder='Name' 
                 name='name' 
-                className='bg-slate-600 p-2'
+                className='bg-gray-100 p-2'
                 />
                 <motion.input
                 custom={2}
@@ -34,7 +34,7 @@ const Contact = () => {
                 type='email' 
                 placeholder='Email' 
                 name='email' 
-                className='my-4 p-2 bg-slate-600'
+                className='my-4 p-2 bg-gray-100'
                 />
                 <motion.textarea 
                 custom={2}
@@ -42,13 +42,13 @@ const Contact = () => {
                 name='message' 
                 placeholder='Message'
                 rows='10'
-                className='bg-slate-600 p-2'
+                className='bg-gray-100 p-2'
                 >
                 </motion.textarea>
                 <motion.button
                 custom={3}
                 variants={textAnimation}  
-                className='text-white border-2 hover:bg-accentColor hover:border-accentColor px-4 py-3 my-8 mx-auto flex ite'>
+                className='text-textMainColor border-2 border-textMainColor hover:bg-accentColor hover:border-accentColor hover:text-white px-4 py-3 my-8 mx-auto flex ite'>
                     Let`s Collaborate
                 </motion.button>
             </form>
